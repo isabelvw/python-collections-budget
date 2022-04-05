@@ -12,10 +12,12 @@ for expenses in expenses.list:
     spending_categories.append(expenses.category)
 
 spending_counter = collections.Counter(spending_categories)
-# print(spending_counter)
+print(spending_counter)
 
 top5 = spending_counter.most_common(5)
 # print(top5)
+
+print("Number of categories = " + str(spending_counter.__len__()))
 
 categories, count = zip(*top5)
 # print(categories)
