@@ -7,7 +7,7 @@ expenses.read_expenses("data/spending_data.csv")
 
 spending_categories = []
 
-for expenses in expenses.list:
+for expense in expenses.list:
     spending_categories.append(expenses.category)
 
 spending_counter = collections.Counter(spending_categories)
