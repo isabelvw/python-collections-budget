@@ -1,6 +1,5 @@
 from tracemalloc import stop
-from Expense import Expenses
-import Expense
+from . import Expense
 import matplotlib.pyplot as plt
 
 class BudgetList():
