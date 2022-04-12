@@ -35,10 +35,10 @@ class BudgetList():
 
 def main():    
     myBudgetList = BudgetList(1200)
-    myExpenses = Expense.Expenses()
-    myExpenses.read_expenses("data/spending_data.csv")
-    for anExpense in myExpenses.list:
-        myBudgetList.append(anExpense.amount)
+    expenses = Expense.Expenses()
+    expenses.read_expenses("data/spending_data.csv")
+    for expense in expenses.list:
+        myBudgetList.append(expense.amount)
     print("The count of all expenses: " + str(len(myBudgetList)))
 
     for entry in myBudgetList:
